@@ -1,6 +1,6 @@
 # Created by https://www.gitignore.io
 # https://github.com/jpadilla/django-project-template/blob/master/.gitignore
-
+.idea
 ### OSX ###
 .DS_Store
 .AppleDouble
