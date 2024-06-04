@@ -25,17 +25,22 @@ source venv/bin/activate # Linux / Mac
 pip install -r requirements.txt
 ```
 
-# Run the project
+### Migrate db
+```
+python manage.py migrate
+```
+
+### Run the project
 ```
 python manage.py runserver
 ```
 
-# Load the demo data
+### Load the demo data
 ```
 python manage.py loaddata fixtures/demo.jsom
 ```
 
-# API Client can:
+### API Client can:
 
 MOVIES:
 - [X] list movies [ListApiMixin]
@@ -46,7 +51,7 @@ WATCHLIST: [Viewset without Update]
 - [X] delete a movie from a user watchlist
 - [X] list all movies in a user watchlist
 
-# Administrator can also:
+### Administrator can also:
 
 USERS: [Viewset, permission_class isAdmin]
 - [X] create a user 
@@ -55,7 +60,7 @@ USERS: [Viewset, permission_class isAdmin]
 - [X] get details for a single user
 - [X] list all users
 
-# Extra resources which could be interesting
+### Extra resources which could be interesting
 
 - https://stackoverflow.com/questions/35257698/what-is-serializers-to-internal-value-method-used-for-in-django (For more complex relationship check)
 - https://www.django-rest-framework.org/api-guide/relations/#generic-relationships
