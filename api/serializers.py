@@ -56,7 +56,31 @@ class WatchListItemSerializer(ModelSerializer):
     class Meta:
         model = WatchListItem
         fields = [
-            "user",
-            "movie",
-            "watched"
+            "user_id",
+            "movie_id",
+            "watched",
+            "order"
         ]
+        read_only_fields = ("order",)
+
+    def validate(self, data):
+        print("I am passing always here")
+        return super().validate(data)
+
+    def validate_user(self, value):
+        print("Validating the user")
+        return super().validate(value)
+
+    def to_internal_value(self, data):
+
+        new_data = data.copy()
+
+        current_order_end = WatchListItem.objects.filter(user=data.get("user")).last()
+        if current_order_end is not None:
+            new_order = current_order_end + 1
+        else:
+            new_order = 1
+
+        new_data["order"] = new_order
+
+        return new_data

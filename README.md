@@ -27,4 +27,9 @@ USERS: [Viewset, permission_class isAdmin]
 - [X] update a user 
 - [X] delete a user 
 - [X] get details for a single user
-- [X] list all users 
+- [X] list all users
+
+# Extra resources which could be interesting
+
+- https://stackoverflow.com/questions/35257698/what-is-serializers-to-internal-value-method-used-for-in-django (For more complex relationship check)
+- https://www.django-rest-framework.org/api-guide/relations/#generic-relationships
