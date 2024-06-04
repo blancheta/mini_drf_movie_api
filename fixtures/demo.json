@@ -1,0 +1,612 @@
+[
+  {
+    "model": "api.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fNelFl21f9SMzjT9XfXcji$8jWyh5j2x6h+vS32WV+fKEY+1ccY/5EHhIyNn5anD8M=",
+      "last_login": "2024-06-04T11:19:14.446Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@upidev.fr",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-04T11:17:35.866Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2,
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jade.smith",
+      "first_name": "Jade",
+      "last_name": "Smith",
+      "email": "jade.smith@upidev.fr",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-04T11:51:13Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 3,
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "bill.clinton",
+      "first_name": "Bill",
+      "last_name": "Clinton",
+      "email": "bill.clinton@upidev.fr",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-04T11:51:55Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 4,
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "johnny.cash",
+      "first_name": "Johnny",
+      "last_name": "Cash",
+      "email": "johnny.cash@upidev.fr",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-04T11:52:43Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.rating",
+    "pk": 1,
+    "fields": {
+      "slug": "G",
+      "name": "General Audiences",
+      "description": "All ages admitted. There is no content that would offend parents if viewed by children."
+    }
+  },
+  {
+    "model": "api.rating",
+    "pk": 2,
+    "fields": {
+      "slug": "PG",
+      "name": "Parental Guidance Suggested",
+      "description": "Some material may not be suitable for children. Parents are urged to provide \"parental guidance.\" May contain some material parents might not like for their young children."
+    }
+  },
+  {
+    "model": "api.rating",
+    "pk": 3,
+    "fields": {
+      "slug": "PG-13",
+      "name": "Parents Strongly Cautioned",
+      "description": "Some material may be inappropriate for children under 13. Parents are urged to be cautious. Some content may be inappropriate for pre-teens."
+    }
+  },
+  {
+    "model": "api.rating",
+    "pk": 4,
+    "fields": {
+      "slug": "R",
+      "name": "Restricted",
+      "description": "Restricted to viewers over 17 or 18. May contain adult material. Parents are urged to learn more about the movie before taking their children to see it."
+    }
+  },
+  {
+    "model": "api.rating",
+    "pk": 5,
+    "fields": {
+      "slug": "NC-17",
+      "name": "Adults Only",
+      "description": "No one 17 and under admitted. Clearly adult. Children are not admitted."
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 1,
+    "fields": {
+      "slug": "action",
+      "name": "Action"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 2,
+    "fields": {
+      "slug": "adventure",
+      "name": "Adventure"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 3,
+    "fields": {
+      "slug": "comedy",
+      "name": "Comedy"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 4,
+    "fields": {
+      "slug": "drama",
+      "name": "Drama"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 5,
+    "fields": {
+      "slug": "fantasy",
+      "name": "Fantasy"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 6,
+    "fields": {
+      "slug": "horror",
+      "name": "Horror"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 7,
+    "fields": {
+      "slug": "mystery",
+      "name": "Mystery"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 8,
+    "fields": {
+      "slug": "romance",
+      "name": "Romance"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 9,
+    "fields": {
+      "slug": "science-fiction",
+      "name": "Science Fiction (Sci-Fi)"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 10,
+    "fields": {
+      "slug": "thriller",
+      "name": "Thriller"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 11,
+    "fields": {
+      "slug": "western",
+      "name": "Western"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 12,
+    "fields": {
+      "slug": "animation",
+      "name": "Animation"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 13,
+    "fields": {
+      "slug": "crime",
+      "name": "Crime"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 14,
+    "fields": {
+      "slug": "documentary",
+      "name": "Documentary"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 15,
+    "fields": {
+      "slug": "family",
+      "name": "Family"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 16,
+    "fields": {
+      "slug": "musical",
+      "name": "Musical"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 17,
+    "fields": {
+      "slug": "war",
+      "name": "War"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 18,
+    "fields": {
+      "slug": "historical",
+      "name": "Historical"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 19,
+    "fields": {
+      "slug": "biographical",
+      "name": "Biographical"
+    }
+  },
+  {
+    "model": "api.genre",
+    "pk": 20,
+    "fields": {
+      "slug": "sport",
+      "name": "Sport"
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 1,
+    "fields": {
+      "title": "The Shawshank Redemption",
+      "synopsis": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
+      "released_date": "1994-06-04",
+      "rating": 4,
+      "genres": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 2,
+    "fields": {
+      "title": "The Godfather",
+      "synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "released_date": "1972-06-04",
+      "rating": 4,
+      "genres": [
+        4,
+        13
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 3,
+    "fields": {
+      "title": "The Dark Knight",
+      "synopsis": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "released_date": "2008-06-04",
+      "rating": 3,
+      "genres": [
+        1,
+        4,
+        13
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 4,
+    "fields": {
+      "title": "Pulp Fiction",
+      "synopsis": "The lives of two mob hitmen, a boxer, a gangster, and his wife intertwine in four tales of violence and redemption.",
+      "released_date": "1994-06-04",
+      "rating": 4,
+      "genres": [
+        4,
+        13
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 5,
+    "fields": {
+      "title": "Schindler's List",
+      "synopsis": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "released_date": "1993-06-04",
+      "rating": 4,
+      "genres": [
+        4,
+        18,
+        19
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 6,
+    "fields": {
+      "title": "Forrest Gump",
+      "synopsis": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "released_date": "1994-06-04",
+      "rating": 3,
+      "genres": [
+        4,
+        8
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 7,
+    "fields": {
+      "title": "Inception",
+      "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+      "released_date": "2010-06-04",
+      "rating": 3,
+      "genres": [
+        1,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 8,
+    "fields": {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "synopsis": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "released_date": "2001-06-04",
+      "rating": 3,
+      "genres": [
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 9,
+    "fields": {
+      "title": "Fight Club",
+      "synopsis": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "released_date": "1999-06-04",
+      "rating": 4,
+      "genres": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "api.movie",
+    "pk": 10,
+    "fields": {
+      "title": "Interstellar",
+      "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "released_date": "2014-06-04",
+      "rating": 3,
+      "genres": [
+        1,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 1,
+    "fields": {
+      "movie": 1,
+      "user": 2,
+      "order": 1,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 2,
+    "fields": {
+      "movie": 2,
+      "user": 2,
+      "order": 2,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 3,
+    "fields": {
+      "movie": 3,
+      "user": 2,
+      "order": 3,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 4,
+    "fields": {
+      "movie": 4,
+      "user": 2,
+      "order": 4,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 5,
+    "fields": {
+      "movie": 5,
+      "user": 2,
+      "order": 5,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 6,
+    "fields": {
+      "movie": 6,
+      "user": 3,
+      "order": 1,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 7,
+    "fields": {
+      "movie": 10,
+      "user": 3,
+      "order": 2,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 8,
+    "fields": {
+      "movie": 8,
+      "user": 3,
+      "order": 3,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 10,
+    "fields": {
+      "movie": 9,
+      "user": 4,
+      "order": 2,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 11,
+    "fields": {
+      "movie": 3,
+      "user": 4,
+      "order": 3,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 12,
+    "fields": {
+      "movie": 4,
+      "user": 4,
+      "order": 4,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 13,
+    "fields": {
+      "movie": 5,
+      "user": 4,
+      "order": 5,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 14,
+    "fields": {
+      "movie": 6,
+      "user": 4,
+      "order": 1,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 15,
+    "fields": {
+      "movie": 7,
+      "user": 4,
+      "order": 6,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 16,
+    "fields": {
+      "movie": 8,
+      "user": 4,
+      "order": 7,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 17,
+    "fields": {
+      "movie": 10,
+      "user": 4,
+      "order": 8,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 18,
+    "fields": {
+      "movie": 2,
+      "user": 4,
+      "order": 9,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 19,
+    "fields": {
+      "movie": 1,
+      "user": 4,
+      "order": 10,
+      "watched": false
+    }
+  },
+  {
+    "model": "api.watchlistitem",
+    "pk": 20,
+    "fields": {
+      "movie": 1,
+      "user": 4,
+      "order": 1,
+      "watched": false
+    }
+  }
+]

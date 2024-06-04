@@ -7,7 +7,33 @@ features of Django Rest Framework.
 1. ModelSerializer
 2. Serializer
 3. Validators in Serializers
-4. Postman requests
+
+# Setup a virtualenv
+
+```
+python -m venv venv
+```
+
+# Activate the virtualenv
+```
+source venv/bin/activate # Linux / Mac
+.\venv\Scripts\activate.bat #
+```
+
+# Install dependencies of the project
+```
+pip install -r requirements.txt
+```
+
+# Run the project
+```
+python manage.py runserver
+```
+
+# Load the demo data
+```
+python manage.py loaddata fixtures/demo.jsom
+```
 
 # API Client can:
 
